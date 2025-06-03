@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio | Alfredo Alan</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="light-theme">
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">Alfredo Alan</a>
+            <ul class="nav-links">
+                <li><a href="#sobre">Sobre Mim</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#certificacoes">Certificações</a></li>
+                <li><a href="#contato">Contato</a></li>
+                <li>
+                    <button id="theme-toggle" class="theme-toggle">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <div id="interactive-background"></div>
+
+    <header class="hero"> 
+        <div class="container">
+            <h1>Olá, eu sou Alfredo Alan</h1>
+            <p>Desenvolvedor apaixonado por criar experiências web e mobile.</p>
+            <a href="#certificacoes" id="scroll-to-certifications" class="btn-primary">Ver Minhas Certificações</a>
+            <a href="Alfredo.pdf" download="Alfredo.pdf" target="_blank" class="btn-primary btn-secondary-outline">Baixar meu CV</a>
+        </div>
+    </header>
+
+    <section id="sobre" class="about">
+        <div class="container about-grid">
+            <div class="about-image">
+                <img src="images/WhatsApp Image 2025-06-02 at 16.44.48.jpeg" alt="Sua Foto de Perfil">
+            </div>
+            <div class="about-text">
+                <h2>Sobre Mim</h2>
+                <p>Sou um desenvolvedor full-stack com experiência em HTML, CSS, JavaScript, Node.js, React e React Native. Gosto de transformar ideias em soluções funcionais e intuitivas, sempre buscando aprender e aplicar as melhores práticas do mercado.</p>
+                <p>Quando não estou codificando, você provavelmente me encontrará explorando novas tecnologias ou praticando algum esporte.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="habilidades" class="skills">
+        <div class="container">
+            <h2>Minhas Habilidades</h2>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <img src="images/html.svg" alt="HTML5">
+                    <span>HTML5</span>
+                </div>
+                <div class="skill-item">
+                    <img src="images/css.svg" alt="CSS3">
+                    <span>CSS3</span>
+                </div>
+                <div class="skill-item">
+                    <img src="images/javascript.svg" alt="JavaScript">
+                    <span>JavaScript</span>
+                </div>
+                <div class="skill-item">
+                    <img src="images/icons8-nó-js.svg" alt="Node.js">
+                    <span>Node.js</span>
+                </div>
+                <div class="skill-item">
+                    <img src="images/react.svg" alt="React">
+                    <span>React</span>
+                </div>
+                <div class="skill-item">
+                    <img src="images/icons8-react-native.svg" alt="React Native">
+                    <span>React Native</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="certificacoes" class="certifications">
+        <div class="container">
+            <h2>Minhas Certificações</h2>
+            <div class="certification-list">
+                <div class="certification-item">
+                    <h3>Técnico em TI com ênfase em Informática para Internet</h3>
+                    <p>Instituição: IMD/UFRN | Período: 4 - 2025</p>
+                </div>
+                <div class="certification-item">
+                    <h3>Graduação em Ciência e Tecnologia</h3>
+                    <p>Instituição: UFRN | Período: 2 - Cursando</p>
+                </div>
+                <div class="certification-item">
+                    <h3>Imersão Alura Back-end com Node.js</h3>
+                    <p>Instituição: Alura | Ano: 2024</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="contact">
+        <div class="container">
+            <h2>Entre em Contato</h2>
+            <p>Tem uma ideia ou precisa de um desenvolvedor? Ficarei feliz em conversar!</p>
+            <div class="contact-links">
+                <a href="mailto:alanlimaimd2023@gmail.com" class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>alanlimaimd2023@gmail.com</span>
+                </a>
+                <a href="https://www.linkedin.com/in/alfredo-alan-bulh%C3%B5es-de-lima-600a592a7/" target="_blank" class="contact-item">
+                    <i class="fab fa-linkedin"></i>
+                    <span>LinkedIn</span>
+                </a>
+                <a href="https://github.com/alannlimaa" target="_blank" class="contact-item">
+                    <i class="fab fa-github"></i>
+                    <span>GitHub</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Alfredo Alan Bulhões de Lima. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script>
+        // Configuração padrão das partículas para o tema CLARO
+        const particlesConfigLight = {
+            "particles": {
+                "number": {
+                    "value": 80,
+                    "density": {
+                        "enable": true,
+                        "value_area": 800
+                    }
+                },
+                "color": {
+                    "value": "#343a40" // Cor das partículas: ESCURA para tema claro
+                },
+                "shape": {
+                    "type": "circle",
+                    "stroke": {
+                        "width": 0,
+                        "color": "#000000"
+                    },
+                    "polygon": {
+                        "nb_sides": 5
+                    }
+                },
+                "opacity": {
+                    "value": 0.5,
+                    "random": false,
+                    "anim": {
+                        "enable": false,
+                        "speed": 1,
+                        "opacity_min": 0.1,
+                        "sync": false
+                    }
+                },
+                "size": {
+                    "value": 3,
+                    "random": true,
+                    "anim": {
+                        "enable": false,
+                        "speed": 40,
+                        "size_min": 0.1,
+                        "sync": false
+                    }
+                },
+                "line_linked": {
+                    "enable": true,
+                    "distance": 150,
+                    "color": "#6c757d", // Cor das linhas: ESCURA para tema claro
+                    "opacity": 0.4,
+                    "width": 1
+                },
+                "move": {
+                    "enable": true,
+                    "speed": 6,
+                    "direction": "none",
+                    "random": false,
+                    "straight": false,
+                    "out_mode": "out",
+                    "bounce": false,
+                    "attract": {
+                        "enable": false,
+                        "rotateX": 600,
+                        "rotateY": 1200
+                    }
+                }
+            },
+            "interactivity": {
+                "detect_on": "canvas",
+                "events": {
+                    "onhover": {
+                        "enable": true,
+                        "mode": "grab"
+                    },
+                    "onclick": {
+                        "enable": true,
+                        "mode": "push"
+                    },
+                    "resize": true
+                },
+                "modes": {
+                    "grab": {
+                        "distance": 140,
+                        "line_linked": {
+                            "opacity": 1
+                        }
+                    },
+                    "bubble": {
+                        "distance": 400,
+                        "size": 40,
+                        "duration": 2,
+                        "opacity": 8,
+                        "speed": 3
+                    },
+                    "repulse": {
+                        "distance": 200,
+                        "duration": 0.4
+                    },
+                    "push": {
+                        "particles_nb": 4
+                    },
+                    "remove": {
+                        "particles_nb": 2
+                    }
+                }
+            },
+            "retina_detect": true
+        };
+
+        // Configuração para o tema ESCURO
+        const particlesConfigDark = {
+            "particles": {
+                "number": {
+                    "value": 80,
+                    "density": {
+                        "enable": true,
+                        "value_area": 800
+                    }
+                },
+                "color": {
+                    "value": "#ffffff" // Cor das partículas: CLARA para tema escuro
+                },
+                "shape": {
+                    "type": "circle",
+                    "stroke": {
+                        "width": 0,
+                        "color": "#000000"
+                    },
+                    "polygon": {
+                        "nb_sides": 5
+                    }
+                },
+                "opacity": {
+                    "value": 0.5,
+                    "random": false,
+                    "anim": {
+                        "enable": false,
+                        "speed": 1,
+                        "opacity_min": 0.1,
+                        "sync": false
+                    }
+                },
+                "size": {
+                    "value": 3,
+                    "random": true,
+                    "anim": {
+                        "enable": false,
+                        "speed": 40,
+                        "size_min": 0.1,
+                        "sync": false
+                    }
+                },
+                "line_linked": {
+                    "enable": true,
+                    "distance": 150,
+                    "color": "#99a3b1", // Cor das linhas: CLARA para tema escuro
+                    "opacity": 0.4,
+                    "width": 1
+                },
+                "move": {
+                    "enable": true,
+                    "speed": 6,
+                    "direction": "none",
+                    "random": false,
+                    "straight": false,
+                    "out_mode": "out",
+                    "bounce": false,
+                    "attract": {
+                        "enable": false,
+                        "rotateX": 600,
+                        "rotateY": 1200
+                    }
+                }
+            },
+            "interactivity": {
+                "detect_on": "canvas",
+                "events": {
+                    "onhover": {
+                        "enable": true,
+                        "mode": "grab"
+                    },
+                    "onclick": {
+                        "enable": true,
+                        "mode": "push"
+                    },
+                    "resize": true
+                },
+                "modes": {
+                    "grab": {
+                        "distance": 140,
+                        "line_linked": {
+                            "opacity": 1
+                        }
+                    },
+                    "bubble": {
+                        "distance": 400,
+                        "size": 40,
+                        "duration": 2,
+                        "opacity": 8,
+                        "speed": 3
+                    },
+                    "repulse": {
+                        "distance": 200,
+                        "duration": 0.4
+                    },
+                    "push": {
+                        "particles_nb": 4
+                    },
+                    "remove": {
+                        "particles_nb": 2
+                    }
+                }
+            },
+            "retina_detect": true
+        };
+
+        // Carrega a configuração inicial das partículas com base no tema salvo
+        const initialTheme = localStorage.getItem('theme') || 'light';
+        if (initialTheme === 'dark') {
+            particlesJS('interactive-background', particlesConfigDark);
+        } else {
+            particlesJS('interactive-background', particlesConfigLight);
+        }
+    </script>
+</body>
+</html>
